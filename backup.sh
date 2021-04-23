@@ -10,7 +10,7 @@ mkdir backup
 export IFS=";"
 for db in $PG_DATABASES; do
     echo "Creating dump of ${db} from ${PG_HOST}..."
-    # pg_dump -h $PG_HOST -p $PG_PORT -U $PG_USER $db > backup/${db}.sql
+    pg_dump -h $PG_HOST -p $PG_PORT -U $PG_USER $db > backup/${db}.sql
     echo "Finish."
 done
 

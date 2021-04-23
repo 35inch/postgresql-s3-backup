@@ -7,16 +7,26 @@ Postgresql tabanlı olarak yapılmıştır fakat diğer veri tabanlarına da ent
 
  ENV variables:
  
- PG_PASS 
- PG_HOST
- PG_PORT
- PG_USER
+ PG_PASS = postgresql password
  
- S3_REGION
- S3_HOST
- S3_ACCESS_KEY
- S3_SECRET_KEY
- S3_BUCKET
+ PG_HOST = posgtrsql host
+ 
+ PG_PORT = postgresql port
+ 
+ PG_USER = postgresql user
+ 
+ PG_DATABASES = database list, example: "db1;db2;db3;db4"
+
+ 
+ S3_REGION = s3 region
+ 
+ S3_HOST = s3 host, optinal
+ 
+ S3_ACCESS_KEY = s3 access key
+ 
+ S3_SECRET_KEY = s3 secret key
+ 
+ S3_BUCKET = s3 bucket
  
  
  Example cronjob yaml:

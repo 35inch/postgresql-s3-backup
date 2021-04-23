@@ -31,6 +31,3 @@ Postgresql tabanlı olarak yapılmıştır fakat diğer veri tabanlarına da ent
  
  Example cronjob yaml:
 
-
-
-35inch - Selçuk Yıldırım

@@ -20,13 +20,15 @@ Postgresql tabanlı olarak yapılmıştır fakat diğer veri tabanlarına da ent
  
  S3_REGION = s3 region
  
- S3_HOST = s3 host, optinal
+ S3_HOST = s3 host (optinal)
  
  S3_ACCESS_KEY = s3 access key
  
  S3_SECRET_KEY = s3 secret key
  
  S3_BUCKET = s3 bucket
+
+ S3_STORAGE_CLASS = STANDARD or GLACIER (optinal)
  
  
  Example cronjob yaml:

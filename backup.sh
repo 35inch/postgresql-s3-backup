@@ -23,4 +23,11 @@ if [[ -z "${S3_HOST}" ]]; then
 else
     AWS_ARGS="--endpoint-url=${S3_HOST}"
 fi
-aws s3 cp $file s3://$S3_BUCKET/$file $AWS_ARGS
+
+if [[ -z "${S3_STORAGE_CLASS}" ]]; then
+    AWS_ARGS2=""
+else
+    AWS_ARGS2="--storage-class=${S3_STORAGE_CLASS}"
+fi
+
+aws s3 cp $file s3://$S3_BUCKET/$file $AWS_ARGS $AWS_ARGS2

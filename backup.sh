@@ -34,6 +34,8 @@ aws s3 cp $file s3://$S3_BUCKET/$file $AWS_ARGS $AWS_ARGS2
 
 
 if [[ -z "${S3_ACCESS_KEY_2}" ]]; then
+    echo "Skip upload to S3 2"
+else
     export AWS_ACCESS_KEY_ID=$S3_ACCESS_KEY_2
     export AWS_SECRET_ACCESS_KEY=$S3_SECRET_KEY_2
     export AWS_DEFAULT_REGION=$S3_REGION_2

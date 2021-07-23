@@ -11,6 +11,10 @@ export IFS=";"
 for db in $PG_DATABASES; do
     echo "Creating dump of ${db} from ${PG_HOST}..."
     pg_dump -h $PG_HOST -p $PG_PORT -U $PG_USER $db > backup/${db}.sql
+    if [ -s backup/${db}.sql ]
+    then
+       abort "backup/${db}.sql file is empty."
+    fi
     echo "Finish."
 done
 

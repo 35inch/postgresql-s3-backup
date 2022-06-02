@@ -17,7 +17,7 @@ Postgresql backup container for kubernetes cronjob system
  
  S3_REGION = s3 region
  
- S3_HOST = s3 host (optinal)
+ S3_HOST = s3 host (optional)
  
  S3_ACCESS_KEY = s3 access key
  
@@ -25,12 +25,12 @@ Postgresql backup container for kubernetes cronjob system
  
  S3_BUCKET = s3 bucket
 
- S3_STORAGE_CLASS = STANDARD or GLACIER (optinal)
+ S3_STORAGE_CLASS = STANDARD or GLACIER (optional)
  
 
  S3_REGION_2 = s3 region
  
- S3_HOST_2 = s3 host (optinal)
+ S3_HOST_2 = s3 host (optional)
  
  S3_ACCESS_KEY_2 = s3 access key
  
@@ -38,7 +38,7 @@ Postgresql backup container for kubernetes cronjob system
  
  S3_BUCKET_2 = s3 bucket
 
- S3_STORAGE_CLASS_2 = STANDARD or GLACIER (optinal)
+ S3_STORAGE_CLASS_2 = STANDARD or GLACIER (optional)
  
  Example cronjob yaml:
 
